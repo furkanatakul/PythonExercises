@@ -1,6 +1,7 @@
 **/*.jpg
 **/*.png
 **/*.gif
+**/*.txt
 
 .idea/**/workspace.xml
 .idea/**/tasks.xml

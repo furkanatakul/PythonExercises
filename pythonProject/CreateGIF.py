@@ -13,9 +13,9 @@ def create_gif(image_paths, output_gif_path, duration=500):
 
 if __name__ == "__main__":
  # List of image file paths
- image_paths = ["image1.jpg","output.png","image.jpg"] # Add your file paths
+ image_paths = ["output2.png"] # Add your file paths
 # Output GIF path
- output_gif_path = "output.gif"
+ output_gif_path = "output3.gif"
 # Create GIF
  create_gif(image_paths, output_gif_path)
 
