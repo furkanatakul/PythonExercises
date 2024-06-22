@@ -2,6 +2,7 @@
 **/*.png
 **/*.gif
 **/*.txt
+Currency Converter/ExchangeRateAPI.py
 
 .idea/**/workspace.xml
 .idea/**/tasks.xml
