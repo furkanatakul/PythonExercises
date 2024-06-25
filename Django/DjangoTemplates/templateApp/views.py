@@ -8,5 +8,8 @@ def index(request):
     return render(request,"templateApp/first.html")
 
 def weatherView(request):
-    weatherDictionary = {"Sarıyer" : "30", "Beykoz" : "32", "Fatih": [10,11,12,13], "Başakşehir" : {"morning" : 10, "evening" : 20}}
+    weatherDictionary = {"Sariyer" : "30", "Beykoz" : "32", "Fatih": [5,11,12,13], 
+                         "Basaksehir" : {"morning" : 10, "evening" : 20},
+                         "userPremium" : True, "test" : "test test",
+                         }
     return render(request, "templateApp/weather.html",context=weatherDictionary)
