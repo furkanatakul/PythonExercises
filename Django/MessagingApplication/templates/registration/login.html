@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+{% block content %}
+{% if user.is_authenticated %}
+<h2>You Already LoggedIn
+    {{user.username}}
+  </h2>
+{% else %}
+<div style="height: 100px;"></div>
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form method="POST" action="{% url 'login' %}">
+            {% csrf_token %}  
+            {% for f in form %}
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="form3Example3">{{ f.label_tag }}</label>
+              {% render_field f placeholder=f.label class+="form-control"  %}
+            </div>
+          {% endfor %}
+  
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">
+                  Remember me
+                </label>
+              </div>
+              <a href="#!" class="text-body">Forgot password?</a>
+            </div>
+            
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button  type="submit" class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+                  class="link-danger">Register</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+{% endif %}
+{% endblock content %}
+
+

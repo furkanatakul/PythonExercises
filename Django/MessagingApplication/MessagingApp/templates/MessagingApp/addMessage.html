@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container">
-<h2>Welcome to the Masseges Page</h2>
-
+<h2>Welcome to the Masseges 
+  {{user.username}}
+</h2>
     <form action="" method="POST">
         {% csrf_token %}
-        <div class="form-group">
+        {% comment %} <div class="form-group">
           <label style="margin-bottom: 5px;" for="nickname">Nickname</label>
           <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Enter nickname">
-        </div>
+        </div> {% endcomment %}
         <div class="mt-3 form-group">
           <label style="margin-bottom: 5px;" for="message">Message</label>
           <input type="text" class=" form-control" id="message" name = "message" placeholder="Enter your message">

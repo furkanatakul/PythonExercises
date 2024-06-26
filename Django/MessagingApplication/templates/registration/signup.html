@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% block content %}
+  <div style="height: 50px;"></div>
+  <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class=" col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form method="POST" action="">
+            {% csrf_token %}
+            {% for f in form %}
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form3Example3">{{ f.label_tag }}</label>
+                {% render_field f placeholder=f.label class+="form-control"  %}
+              </div>
+            {% endfor %}
+            <div class="d-flex justify-content-center text-center text-lg-start mt-4 pt-2">
+              <button value="signup" type="submit" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

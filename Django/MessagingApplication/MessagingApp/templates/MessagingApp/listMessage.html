@@ -5,11 +5,14 @@
     {% for message in messages %}
       <div class="card mb-3">
       <div class="card-header" style="background-color:aqua ;">
-        {{ message.nickName }}
+        {{ message.username }}
       </div>
       <div class="card-body">
         <p class="card-text">{{ message.message }}</p>
       </div>
+      {% if message.username == user %}
+      <a style="margin-left:90% ;width: 10%;" class="btn btn-danger" href="{% url "MessagingApp:deleteMessage" id1=message.id %}">Delete</a>
+      {% endif %}
     </div>
     {% endfor %}
 </div>

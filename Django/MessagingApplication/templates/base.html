@@ -37,6 +37,22 @@
                 <a class="nav-link" href="{% url 'MessagingApp:addMessageByModelForm' %}">Add Message By Django ModelForm</a>
               </li>
             </ul>
+            <form method="POST" action="{% url 'login' %}" style="margin-right: 10px;" class=" form-inline my-2 my-lg-0">
+              {% csrf_token %}
+              <button class=" btn btn-outline-primary my-2 my-sm-0" type="submit">Login</button>
+            </form>
+            <form method="POST" action="{% url 'MessagingApp:signup' %}" style="margin-right: 10px;" class=" form-inline my-2 my-lg-0">
+              {% csrf_token %}
+              <button class=" btn btn-outline-primary my-2 my-sm-0" type="submit">SigUp</button>
+            </form>
+            <form method="POST" action="{% url 'logout' %}?next=/" class="form-inline my-2 my-lg-0">
+              {% csrf_token %}
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Logout</button>
+            </form>
+
+          
+          
+          
           </div>
         </div>
       </nav>
