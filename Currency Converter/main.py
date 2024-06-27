@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk, messagebox
 from ExchangeRateAPI import *
-import requests
+import requests 
 FONT=('Arial','18')
 
 window = Tk()
