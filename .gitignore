@@ -5,6 +5,7 @@ myenv/
 **/*.gif
 **/*.txt
 Currency Converter/ExchangeRateAPI.py
+Tkinter/RomanNumberExtra.py
 __pycache__/
 *.py[cod]
 *$py.class
