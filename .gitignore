@@ -1,9 +1,11 @@
 myenv/
+Kutuphaneler/
 .idea/
 **/*.jpg
 **/*.png
 **/*.gif
 **/*.txt
+**/*.json
 Currency Converter/ExchangeRateAPI.py
 Tkinter/RomanNumberExtra.py
 __pycache__/
