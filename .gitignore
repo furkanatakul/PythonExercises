@@ -6,7 +6,9 @@ Kutuphaneler/
 **/*.gif
 **/*.txt
 **/*.json
+**/*.exe
 Currency Converter/ExchangeRateAPI.py
+WebScraper/githubUser.py
 Tkinter/RomanNumberExtra.py
 __pycache__/
 *.py[cod]
