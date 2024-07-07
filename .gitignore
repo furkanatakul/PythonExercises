@@ -7,6 +7,9 @@ Kutuphaneler/
 **/*.txt
 **/*.json
 **/*.exe
+**/*.csv
+**/*.xlsx
+**/.ipynb_checkpoints/
 Currency Converter/ExchangeRateAPI.py
 WebScraper/githubUser.py
 Tkinter/RomanNumberExtra.py
