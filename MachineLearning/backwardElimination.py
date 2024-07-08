@@ -51,7 +51,7 @@ print(yTest, "\n", tahmin)
 
 # OLS modeli oluştur
 X = np.append(arr=np.ones((len(x), 1)).astype(int), values=x, axis=1)
-X = pd.DataFrame(x)
+X = pd.DataFrame(X)
 xList = X.iloc[:, [0, 1, 2, 3, 4, 5]]
 xList = np.array(xList, dtype=float)
 model = sm.OLS(y, xList).fit()
