@@ -2,6 +2,7 @@ myenv/
 Kutuphaneler/
 .idea/
 **/*.jpg
+**/*.mp4
 **/*.png
 **/*.gif
 **/*.txt
