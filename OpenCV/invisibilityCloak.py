@@ -35,7 +35,7 @@ while cam.isOpened():
 
     cv.imshow("goruntu",frame)
     cv.imshow("msak", mask)
-    cv.imshow("cloak", dst)
+    cv.imshow("cloak", fg)
     if cv.waitKey(1) & 0xFF == 27:
         break
 
