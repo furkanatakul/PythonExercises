@@ -8,6 +8,7 @@ Kutuphaneler/
 **/*.txt
 **/*.json
 **/*.exe
+**/*.xml
 **/*.csv
 **/*.xlsx
 **/*.avi
