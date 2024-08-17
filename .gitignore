@@ -13,6 +13,7 @@ Kutuphaneler/
 **/*.xlsx
 **/*.avi
 **/*.h5
+**/*.p
 **/.ipynb_checkpoints/
 Currency Converter/ExchangeRateAPI.py
 WebScraper/githubUser.py

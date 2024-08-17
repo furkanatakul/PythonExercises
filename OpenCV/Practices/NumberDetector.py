@@ -40,9 +40,7 @@ accuracy = correct*100.0 / results.size
 print("accuracy: ",accuracy)
 
 # Eğitilen modeli kayıt etmek
-# video'da yok sonradan ekledim :(
 knn.save('KNN_Trained_Model.yml')
-#%%
 #modeli okuma
 knn = cv2.ml.KNearest_load('KNN_Trained_Model.yml')
 
@@ -53,10 +51,8 @@ def test(img):
     img = cv2.dilate(img, np.ones((15,15),np.uint8))
     cv2.imshow("img",img)
     img = cv2.resize(img, (20,20)).reshape(-1,400).astype(np.float32)
-    ret, results, neighbours, distance = knn.findNearest(img, 
-                                                         5)
-    cv2.putText(img2, str(int(ret)), (100,300), 
-                font, 10, 255, 4, cv2.LINE_AA)
+    ret, results, neighbours, distance = knn.findNearest(img, 5)
+    cv2.putText(img2, str(int(ret)), (100,300), font, 10, 255, 4, cv2.LINE_AA)
     return ret
 
 
@@ -105,8 +101,3 @@ while(1):
     cv2.imshow("result",img2)
     
 cv2.destroyAllWindows()
-
-
-
-
-
