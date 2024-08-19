@@ -16,7 +16,7 @@ cam.set(3, 480)
 cam.set(4, 480)
 
 # Modeli yükleme
-pickleIn = open("model_trained.p", "rb")
+pickleIn = open("../Object Tracking/model_trained.p", "rb")
 model = pickle.load(pickleIn)
 
 while True:

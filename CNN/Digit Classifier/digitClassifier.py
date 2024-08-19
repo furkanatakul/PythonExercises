@@ -86,7 +86,7 @@ hist = model.fit(
                       steps_per_epoch=xtrain.shape[0] // 250, shuffle = 1
 )
 
-pickleOut = open("model_trained.p", "wb")
+pickleOut = open("../Object Tracking/model_trained.p", "wb")
 pickle.dump(model, pickleOut)
 pickleOut.close()
 
