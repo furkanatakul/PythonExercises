@@ -39,7 +39,7 @@ print("Siniflandirma")
 pickleIn = open("model_trained.p", "rb")
 model = pickle.load(pickleIn)
 proba = model.predict(proposals)
-
+print(proba)
 numberList = []
 idx = []
 
