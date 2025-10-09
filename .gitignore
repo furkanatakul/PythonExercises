@@ -17,6 +17,7 @@ Kutuphaneler/
 **/.ipynb_checkpoints/
 Currency Converter/ExchangeRateAPI.py
 WebScraper/githubUser.py
+WebScraper/linkedinUser.py
 Tkinter/RomanNumberExtra.py
 __pycache__/
 *.py[cod]
@@ -107,3 +108,4 @@ media
 *.pot
 *.pyc
 __pycache__
+itudatabase.py
